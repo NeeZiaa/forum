@@ -2,18 +2,13 @@
 
 /* Titres */
 
-/* Naviguation */
-nav.menu-nav ul li.btn{
-    list-style: none;
+header.Header img.Logo{
+    padding-left: 125px;
+	
 }
-nav.menu-nav ul li.btn a{
-    text-decoration: none;
-	color: black;
-}
-/* Div */
-div.btn{
-	width: 16em;
-	background-color: #3E3E3E;
-	padding-bottom: 20px;
-	padding-bottom: 5px;
+
+header.Header p.Titre{
+    padding-left: 230px;
+    padding-bottom: 20px;;
+
 }
