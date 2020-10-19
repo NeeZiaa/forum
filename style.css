@@ -1,3 +1,19 @@
 /* Merci de ranger les objets par types avec des annotations */
 
 /* Titres */
+
+/* Naviguation */
+nav.menu-nav ul li.btn{
+    list-style: none;
+}
+nav.menu-nav ul li.btn a{
+    text-decoration: none;
+	color: black;
+}
+/* Div */
+div.btn{
+	width: 16em;
+	background-color: #3E3E3E;
+	padding-bottom: 20px;
+	padding-bottom: 5px;
+}
