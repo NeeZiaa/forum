@@ -44,17 +44,16 @@ body{
 /* Div */
 .left-panel{
     width: 200px;
-    /*padding-bottom: 20px;
-    padding-bottom: 5px;*/
+    padding-bottom: 856.5px;
     background-color: #051626;
-    /*width: 10em;*/
+    height: 100%;
 }
+
 .btn{
-    width: 150px;
-    /*padding-bottom: 20px;
-    padding-bottom: 5px;*/
+    width: 100%; 
+    padding-bottom: 20px;
+    padding-bottom: 5px;
     background-color: #051626;
-    /*width: 10em;*/
 }
 
 .leftbox{
@@ -65,17 +64,17 @@ body{
     color: white;
 }
 
-
 .contour{
     display: flex;
 }
+
 .Logo{
     padding-left: 20px;
 }
 
 .titre {
     background-color: #051626;
-    width: 1750px;
+    width: 1933px;
     height: 160px;
     font-size: 160px;
     color: white;
@@ -105,6 +104,7 @@ div.connexion{
     position: absolute;
     margin-top:200px;
     margin-left:500px;
+    font-size: 25px;
 }
 div.inscription{
     text-align: center;
@@ -116,15 +116,20 @@ div.inscription{
     border-radius: 20px;
     position: absolute;
     margin-top:200px;
-    margin-left:800px;
+    margin-left:1000px;
     color: white;
+    font-size: 25px;
 }
-input.email .pseudo .mdp .submit{
-    border-radius: 5px;
-}
+
 h2.connection{
     position: absolute;
     margin-top:200px;
     margin-left:200px;
     color: white;
+    font-size: 25px;
+}
+
+.form{
+    font-size: 25px;
+}te;
 }
