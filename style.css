@@ -2,13 +2,24 @@
 
 /* Titres */
 
-header.Header img.Logo{
-    padding-left: 125px;
-	
+/* Image Background */
+
+html{
+    background-image: url(../img/Config-Forum.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 100%;
 }
 
-header.Header p.Titre{
-    padding-left: 230px;
-    padding-bottom: 20px;;
+/* Deplacement Du Logo */
 
+header.Header img.Logo{
+    padding-left: 125px;	
+}
+
+/* Deplacement Du Titre De La Page */
+
+header.Header h1.Titre{
+    padding-left: 300px;
 }
