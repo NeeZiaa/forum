@@ -35,15 +35,16 @@
     }
 
     ?>
+
 <div class="connexion">
     <h2 class="connexion">Connexion</h2>
 
     <form method="post">
-        <input class="email" type="email" name="lemail" placeholder="Email" required><br>
-        <input class="pseudo" type="text" name="lpseudo" placeholder="Pseudo" required><br>
-        <input class="mdp" type="password" name="lpassword" id="lpassword" placeholder="Mot de passe" required><br>
+        <input class="form" type="email" name="lemail" placeholder="Email" required><br>
+        <input class="form" type="text" name="lpseudo" placeholder="Pseudo" required><br>
+        <input class="form" type="password" name="lpassword" id="lpassword" placeholder="Mot de passe" required><br>
         <br>
-        <input class="submit" type="submit" name="formlogin" id="formlogin" value="Connexion">
+        <input class="form" type="submit" name="formlogin" id="formlogin" value="Connexion">
         <br>
         <br>
     </form>
@@ -57,17 +58,17 @@
     <h2 class="inscription">Inscription</h2>
  
     <form method="post">
-        <input type="email" name="email" placeholder="Email" required><br>
-        <input type="text" name="pseudo" placeholder="Pseudo" required><br>
-        <input type="password" name="password" id="password" placeholder="Mot de passe" required><br>
-        <input type="password" name="cpassword" id="cpassword" placeholder="Confirmation du mot de passe" required><br>
+        <input type="email" name="email" placeholder="Email" required class="form"><br>
+        <input type="text" name="pseudo" placeholder="Pseudo" required class="form"><br>
+        <input type="password" name="password" id="password" placeholder="Mot de passe" required class="form"><br>
+        <input type="password" name="cpassword" id="cpassword" placeholder="Confirmation du mot de passe" required class="form"><br>
         <br>
-        <input type="submit" name="formsend" id="formsend" value="Inscription">
+        <input type="submit" name="formsend" id="formsend" value="Inscription" class="form">
         <br>
         <br>
     </form>
 
     <?php include 'includes/signin.php'; ?>
-    
+</div>
 </body>
 </html>
