@@ -1,4 +1,3 @@
-
 /* Merci de ranger les objets par types avec des annotations */
 
 /* Titres */
@@ -13,6 +12,14 @@ html{
 }
 .infos{
     background: url(../img/W9H0fx.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    min-height: 100%;
+}
+
+.news{
+    background: url(../img/background3.jpg) no-repeat;
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
@@ -41,7 +48,6 @@ body{
     padding-bottom: 5px;*/
     background-color: #051626;
     /*width: 10em;*/
-    padding-bottom: 100%;
 }
 .btn{
     width: 150px;
@@ -49,7 +55,6 @@ body{
     padding-bottom: 5px;*/
     background-color: #051626;
     /*width: 10em;*/
-    padding-bottom: 100%;
 }
 
 .leftbox{
@@ -78,6 +83,48 @@ body{
 
 .texte{
     font-size: 25px;
+    color: white;
+}
+
+.texte2{
+    font-size: 25px;
+    color: white;
 }
 
 /* img */
+
+div.connexion{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 3px black;
+    margin-bottom: 50px;
+    width: 15em;
+    border-radius: 20px;
+    color: white;
+    position: absolute;
+    margin-top:200px;
+    margin-left:500px;
+}
+div.inscription{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid black;
+    margin-bottom: 50px;
+    width: 15em;
+    border-radius: 20px;
+    position: absolute;
+    margin-top:200px;
+    margin-left:800px;
+    color: white;
+}
+input.email .pseudo .mdp .submit{
+    border-radius: 5px;
+}
+h2.connection{
+    position: absolute;
+    margin-top:200px;
+    margin-left:200px;
+    color: white;
+}
