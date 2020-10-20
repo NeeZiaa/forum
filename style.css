@@ -1,3 +1,4 @@
+
 /* Merci de ranger les objets par types avec des annotations */
 
 /* Titres */
@@ -10,9 +11,17 @@ html{
     background-attachment: fixed;
     min-height: 100%;
 }
+.infos{
+    background: url(../img/W9H0fx.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    min-height: 100%;
+}
 
 body{
     margin: 0 auto;
+    display: flex;
 }
 
 /* Naviguation */
@@ -43,6 +52,15 @@ body{
     padding-bottom: 100%;
 }
 
+.leftbox{
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 200px;
+    font-size: 25px;
+    color: white;
+}
+
+
 .contour{
     display: flex;
 }
@@ -56,6 +74,10 @@ body{
     height: 160px;
     font-size: 160px;
     color: white;
+}
+
+.texte{
+    font-size: 25px;
 }
 
 /* img */
