@@ -2,24 +2,60 @@
 
 /* Titres */
 
-/* Image Background */
 
 html{
-    background-image: url(../img/Config-Forum.png);
+    background: url(../img/Background1.jpg) no-repeat;
     background-size: cover;
-    background-repeat: no-repeat;
     background-position: center center;
+    background-attachment: fixed;
     min-height: 100%;
 }
 
-/* Deplacement Du Logo */
-
-header.Header img.Logo{
-    padding-left: 125px;	
+body{
+    margin: 0 auto;
 }
 
-/* Deplacement Du Titre De La Page */
-
-header.Header h1.Titre{
-    padding-left: 300px;
+/* Naviguation */
+.menu-nav ul li{
+    list-style-type: none;
 }
+
+.menu-nav ul li.btn a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Div */
+.left-panel{
+    width: 200px;
+    /*padding-bottom: 20px;
+    padding-bottom: 5px;*/
+    background-color: #051626;
+    /*width: 10em;*/
+    padding-bottom: 100%;
+}
+.btn{
+    width: 150px;
+    /*padding-bottom: 20px;
+    padding-bottom: 5px;*/
+    background-color: #051626;
+    /*width: 10em;*/
+    padding-bottom: 100%;
+}
+
+.contour{
+    display: flex;
+}
+.Logo{
+    padding-left: 20px;
+}
+
+.titre {
+    background-color: #051626;
+    width: 1750px;
+    height: 160px;
+    font-size: 160px;
+    color: white;
+}
+
+/* img */
