@@ -1,132 +1,74 @@
-/* Merci de ranger les objets par types avec des annotations */
+<?php session_start(); 
+?>
+<!DOCTYPE html>
+<html lang="fr" class="connect">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/Logo-Forum.png" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Connexion</title>
+</head>
+<body>
+<!-- Database -->
+<?php include 'includes/database.php'; ?>
 
-/* Titres */
+<!-- Menu de naviguation -->
+<?php include 'includes/menu-nav.php' ?>
 
+    <div class="titre">Le NF Forum</div>
 
-html{
-    background: url(../img/Background1.jpg) no-repeat;
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-    min-height: 100%;
-}
-.infos{
-    background: url(../img/W9H0fx.jpg) no-repeat;
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-    min-height: 100%;
-}
+<!-- ------------------CONNEXION--------------------------->
+<?php if (isset($_SESSION['email']) && (isset($_SESSION['pseudo']))) {
+        ?>
+        <h2 class="connection">Connecté en tant que <?= $_SESSION['pseudo']; ?></h2>
+        <a class="btn-connect" href="espace-membre/index.php">
+            Espace-membre
+        </a>
+        <br>
+        <br>
+        <br>
+        <?php
+    }else{
+        echo "<h2 class='connection'>Veuillez vous connectez</h2>";
 
-.news{
-    background: url(../img/background3.jpg) no-repeat;
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-    min-height: 100%;
-}
+    }
 
-body{
-    margin: 0 auto;
-    display: flex;
-}
+    ?>
 
-/* Naviguation */
-.menu-nav ul li{
-    list-style-type: none;
-}
+<div class="connexion">
+    <h2 class="connexion">Connexion</h2>
 
-.menu-nav ul li.btn a{
-    text-decoration: none;
-    color: white;
-}
+    <form method="post">
+        <input class="form" type="email" name="lemail" placeholder="Email" required><br>
+        <input class="form" type="text" name="lpseudo" placeholder="Pseudo" required><br>
+        <input class="form" type="password" name="lpassword" id="lpassword" placeholder="Mot de passe" required><br>
+        <br>
+        <input class="form" type="submit" name="formlogin" id="formlogin" value="Connexion">
+        <br>
+        <br>
+    </form>
+    <br>
 
-/* Div */
-.left-panel{
-    padding-bottom: 749.9px;
-    background-color: #051626;
-}
+    <?php include 'includes/login.php'; ?>
 
-.btn{
-    width: 100%; 
-    padding-bottom: 20px;
-    padding-bottom: 5px;
-    background-color: #051626;
-}
+</div>
+<!--  ------------------Inscription----------------------->
+<div class="inscription">
+    <h2 class="inscription">Inscription</h2>
+ 
+    <form method="post">
+        <input type="email" name="email" placeholder="Email" required class="form"><br>
+        <input type="text" name="pseudo" placeholder="Pseudo" required class="form"><br>
+        <input type="password" name="password" id="password" placeholder="Mot de passe" required class="form"><br>
+        <input type="password" name="cpassword" id="cpassword" placeholder="Confirmation du mot de passe" required class="form"><br>
+        <br>
+        <input type="submit" name="formsend" id="formsend" value="Inscription" class="form">
+        <br>
+        <br>
+    </form>
 
-.leftbox{
-    position: absolute;
-    margin-top: 200px;
-    margin-left: 200px;
-    font-size: 25px;
-    color: white;
-}
-
-.contour{
-    display: flex;
-}
-
-.Logo{
-    padding-left: 20px;
-}
-
-.titre {
-    background-color: #051626;
-    width: 1740px;
-    height: 160px;
-    font-size: 160px;
-    color: white;
-}
-
-.texte{
-    font-size: 25px;
-    color: white;
-}
-
-.texte2{
-    font-size: 25px;
-    color: white;
-}
-
-/* img */
-
-div.connexion{
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    border: solid 3px black;
-    margin-bottom: 50px;
-    width: 15em;
-    border-radius: 20px;
-    color: white;
-    position: absolute;
-    margin-top:200px;
-    margin-left:500px;
-    font-size: 25px;
-}
-div.inscription{
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    border: 3px solid black;
-    margin-bottom: 50px;
-    width: 15em;
-    border-radius: 20px;
-    position: absolute;
-    margin-top:200px;
-    margin-left:1000px;
-    color: white;
-    font-size: 25px;
-}
-
-h2.connection{
-    position: absolute;
-    margin-top:200px;
-    padding-left:200px;
-    color: white;
-    font-size: 25px;
-}
-
-.form{
-    font-size: 25px;
-}
+    <?php include 'includes/signin.php'; ?>
+</div>
+</body>
+</html>
