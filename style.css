@@ -54,6 +54,7 @@ body{
 .left-panel{
     background-color: #051626;
     height: 1007px;
+    position: fixed;
 }
 
 .btn{
@@ -84,17 +85,39 @@ body{
     height: 160px;
     font-size: 160px;
     color: white;
+    position: fixed;
+    margin-left: 180px;
+    font-family:Calibri;
 }
 
 .texte{
     font-size: 25px;
     color: white;
+    margin-left: 200px;
+    margin-top: 180px;
+    background: rgba(255, 255, 255, 0.75);
+    box-shadow: gray 3px 3px 10px;
+    border-radius: 5px;
 }
 
 .texte2{
     font-size: 25px;
-    color: white;
+    color: black;  
+    margin-left: 200px;
+    margin-top: 180px;
+    background: rgba(255, 255, 255, 0.75);
+    box-shadow: gray 3px 3px 10px;
+    border-radius: 5px;
 }
+
+p.hometxt{
+    background: rgba(255, 255, 255, 0.75);
+    color: black;
+    font-size: 25px;
+    margin-left: 200px;
+    margin-top: 180px;
+    box-shadow: gray 3px 3px 10px;
+}   
 
 /* img */
 
@@ -137,4 +160,15 @@ h2.connection{
 
 .form{
     font-size: 25px;
+}
+
+.btnc{
+    font-size: 25px;
+}
+
+div.connexion input.btnc:hover{
+    font-size: 25px;
+    transition: 0.5s all;
+    background-color: gray;
+    color: lightgray;
 }
