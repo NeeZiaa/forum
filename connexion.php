@@ -44,7 +44,7 @@
         <input class="form" type="text" name="lpseudo" placeholder="Pseudo" required><br>
         <input class="form" type="password" name="lpassword" id="lpassword" placeholder="Mot de passe" required><br>
         <br>
-        <input class="form" type="submit" name="formlogin" id="formlogin" value="Connexion">
+        <input class="btnc" type="submit" name="formlogin" id="formlogin" value="Connexion">
         <br>
         <br>
     </form>
