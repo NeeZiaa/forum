@@ -1,0 +1,174 @@
+/* Merci de ranger les objets par types avec des annotations */
+
+/* Titres */
+
+
+.index{
+    background: url(../img/Background1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    min-height: 100%;
+}
+
+.connect{
+    background: url(../img/Background1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    min-height: 100%;
+}
+
+.infos{
+    background: url(../img/W9H0fx.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    min-height: 100%;
+}
+
+.news{
+    background: url(../img/background3.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    min-height: 100%;
+}
+
+body{
+    margin: 0 auto;
+    display: flex;
+}
+
+/* Naviguation */
+.menu-nav ul li{
+    list-style-type: none;
+}
+
+.menu-nav ul li.btn a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Div */
+.left-panel{
+    background-color: #051626;
+    height: 1007px;
+    position: fixed;
+}
+
+.btn{
+    width: 100%; 
+    padding-bottom: 25px;
+    background-color: #051626;
+}
+
+.leftbox{
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 200px;
+    font-size: 25px;
+    color: white;
+}
+
+.contour{
+    display: flex;
+}
+
+.Logo{
+    padding-left: 20px;
+}
+
+.titre {
+    background-color: #051626;
+    width: 1740px;
+    height: 160px;
+    font-size: 160px;
+    color: white;
+    position: fixed;
+    margin-left: 180px;
+    font-family:Calibri;
+}
+
+.texte{
+    font-size: 25px;
+    color: white;
+    margin-left: 200px;
+    margin-top: 180px;
+    background: rgba(255, 255, 255, 0.75);
+    box-shadow: gray 3px 3px 10px;
+    border-radius: 5px;
+}
+
+.texte2{
+    font-size: 25px;
+    color: black;  
+    margin-left: 200px;
+    margin-top: 180px;
+    background: rgba(255, 255, 255, 0.75);
+    box-shadow: gray 3px 3px 10px;
+    border-radius: 5px;
+}
+
+p.hometxt{
+    background: rgba(255, 255, 255, 0.75);
+    color: black;
+    font-size: 25px;
+    margin-left: 200px;
+    margin-top: 180px;
+    box-shadow: gray 3px 3px 10px;
+}   
+
+/* img */
+
+div.connexion{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 3px black;
+    margin-bottom: 50px;
+    width: 15em;
+    border-radius: 20px;
+    color: white;
+    position: absolute;
+    margin-top:200px;
+    margin-left:500px;
+    font-size: 25px;
+}
+div.inscription{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid black;
+    margin-bottom: 50px;
+    width: 15em;
+    border-radius: 20px;
+    position: absolute;
+    margin-top:200px;
+    margin-left:1000px;
+    color: white;
+    font-size: 25px;
+}
+
+h2.connection{
+    position: absolute;
+    margin-top:200px;
+    padding-left:200px;
+    color: white;
+    font-size: 25px;
+}
+
+.form{
+    font-size: 25px;
+}
+
+.btnc{
+    font-size: 25px;
+}
+
+div.connexion input.btnc:hover{
+    font-size: 25px;
+    transition: 0.5s all;
+    background-color: gray;
+    color: lightgray;
+}
